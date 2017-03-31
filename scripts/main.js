@@ -101,7 +101,7 @@ document.addEventListener(
 function initGame(){
  if(gamestart==1) {
   montimer=window.setInterval(scorefonc,25);
-     montimer2=window.setInterval(collision,25);
+
   // montimer2=window.setInterval(highscore,25);
  }
  else if(gamestart==0) {
@@ -112,10 +112,9 @@ function initGame(){
 
 
 function scorefonc(){
-    if(gamestart==1]{
  score +=1 ;
  scoresdiv.innerHTML="Votre Score :"+ (score);
- highscoreFunc();}else(){}
+ highscoreFunc();
 }
 
 function highscoreFunc(){
@@ -157,10 +156,3 @@ function bougerBalle(){
  }
 }
 
-function collision(){
-    if(posX1>posX || posX1<posX+tailleballeL||posY1>posY ||posY1<posY+tailleballeL){
-          gamestart= 0;
-    } else if(posXBalle!=0){
-      ;
-    }
-}
