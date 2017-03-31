@@ -50,7 +50,7 @@ function init(){
 
 document.addEventListener('keydown', function(perso) {
  console.log(posY);  
- if(event.keyCode == 38 && posY!= 0 && gamestart==1) {
+ if(event.keyCode == 38 && posY!= 5 && gamestart==1) {
   posY -= 15;
  }
  else if(event.keyCode == 40 && posY <= hauteurJeu-tailleballeH-15 && gamestart==1) {
@@ -63,7 +63,7 @@ document.addEventListener('keydown', function(perso) {
 
 document.addEventListener('keydown', function(perso) {
 
- if(event.keyCode == 37 &&  posX != 0 && gamestart==1) {
+ if(event.keyCode == 37 &&  posX != 5 && gamestart==1) {
 
   posX -= 15;
  }
